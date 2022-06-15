@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon"
+        href="https://cdn-icons.flaticon.com/png/128/1048/premium/1048361.png?token=exp=1655172704~hmac=6eaa0f75b4c3f7e45d169363b2f82462"
+        type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="titulo">Carros</h1>
+        <aside>
+            <form class="formulario">
+                <div class="formulario-item">
+                    <label for="titulo">Título</label>
+                    <input class="input" name="titulo" type="text" id="titulo" placeholder="Insira o nome do carro"
+                        required />
+                </div>
+                <div class="formulario-item">
+                    <label for="descricao">Descrição</label>
+                    <textarea class="input" name="descricao" type="text" id="descricao"
+                        placeholder="Insira a descrição do carro" required></textarea>
+                </div>
+                <div class="formulario-item">
+                    <label for="url">URL da Imagem</label>
+                    <input class="input" name="url" type="url" id="url" placeholder="Insira o URL do carro" required />
+                </div>
+
+                <button class='btn' type="submit" value="Enviar">Enviar</button>
+            </form>
+        </aside>
+
+    </div>
+    <div class="carro-lista">
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
